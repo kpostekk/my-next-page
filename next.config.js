@@ -2,6 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  pageExtensions: ['md', 'mdx', 'tsx', 'jsx']
 }
 
-module.exports = nextConfig
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/,
+  options: {
+
+  }
+})
+
+module.exports = withMDX(nextConfig)
