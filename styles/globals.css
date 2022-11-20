@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a {
+    @apply hover:text-sky-500 duration-150;
+}
